@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+/* Banner Section */
+.banner {
+    width: 1000px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #eac785, #e6be84);
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+    overflow: visible; /* Allows image to extend outside */
+}
+
+/* Shoe Image (Left Side) */
+.shoe {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -160px; /* Moves the shoe further left */
+    z-index: 10; /* Ensures the shoe is above the banner */
+}
+
+.shoe img {
+    width: 370px; /* Slightly increased */
+    height: auto;
+    transform: rotate(5deg);
+   
+}
+
+/* Text Content (Right Side) */
+.text-content {
+    flex: 1;
+    text-align: left;
+    
+}
+
+.text-content h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.text-content p {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Buy Now Button */
+.buy-btn {
+    background-color: #283c46;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy-btn:hover {
+    background-color: #1e2d35;
+}

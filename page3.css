@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    text-align: center;
+    background: white;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #092d38;
+}
+
+.sneaker-card {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e39100;
+    border-radius: 15px;
+    width: 65%;
+    margin: 20px auto;
+    padding: 40px;
+    color: white;
+    position: relative;
+    overflow: visible; /* Allows image overflow effect */
+}
+
+.text-content {
+    text-align: left;
+    max-width: 45%;
+    color: white;
+    z-index: 2;
+}
+
+.text-content h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.text-content p {
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+button {
+    background: #a4001f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.image-content {
+    position: absolute;
+    right: -50px; /* Moves shoe out of div */
+    top: 50%;
+    transform: translateY(-50%) rotate(-10deg);
+    z-index: 5;
+}
+
+.image-content img {
+    max-width: 420px;
+    background-size: contain;
+}

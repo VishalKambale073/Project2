@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+/* Banner Section */
+.banner {
+    width: 850px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #47b3da, #2a91c6);
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+    overflow: visible;
+}
+
+/* Text Content (Left Side) */
+.text-content {
+    flex: 1;
+    text-align: left;
+    color: #fff;
+    padding-left: 30px;
+}
+
+.text-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.text-content p {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Buy Now Button */
+.buy-btn {
+    background-color: #0a6d32;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy-btn:hover {
+    background-color: #064d24;
+}
+
+/* Shoe Image (Right Side) */
+.shoe {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -90px; /* Moves the shoe slightly out */
+    z-index: 10;
+}
+
+.shoe img {
+    width: 400px;
+    height: auto;
+    transform: rotate(-5deg);
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.2)); /* Adds depth */
+}

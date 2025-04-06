@@ -1,0 +1,54 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+    text-align: center;
+}
+
+.sneaker-section {
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 40px;
+}
+
+.sneaker-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 70px;
+}
+
+.sneaker {
+    position: relative;
+    width: 200px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background: #1da1a2;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.sneaker img {
+    position: relative;
+    width: 200px;
+    z-index: 1;
+}
